@@ -101,15 +101,11 @@ a:hover {
 /* HERO */
 
 .hero {
-    min-height: 100vh;
     background: url("pexels-photo-7060815.jpeg");
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
 }
 
 .hero::before {
