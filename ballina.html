@@ -1,0 +1,231 @@
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobileria Learti - Lider ne cilesi.</title>
+    <link rel="stylesheet" href="dizajni.css">
+</head>
+
+<body>
+
+   
+    <nav>
+        <label class="logo">Mobileria LEARTI</label>
+        <ul>
+            
+            <li><a class="active" href="ballina.html">Ballina</a></li>
+            <li><a href="#projektet">Projektet</a></li>
+            <li><a href="#rrethnesh">Rreth Nesh</a></li>
+            <li><a href="#sherbimet">Sherbimet</a></li>
+            <li><a href="#kontakti">Kontakti</a></li>
+            <li>
+            <p id="ora"></p>
+            </li>
+            
+        </ul>
+    </nav>
+
+    
+    <div class="hero">
+        <div class="container">
+            <div class="hero-elements">
+                <h1 class="title" id="ndryshimtitulli">Ne ju garantojme per kualitet shume te larte!</h1>
+                <button class="button-hero" onclick="ndryshotitullin()">Me shume...</button>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="services" id="sherbimet">
+        <div class="container">
+            <h1>Sherbimet</h1>
+            <div class="cards">
+
+                
+                <div class="card">
+                    <div class="front">
+                        <img src="library/kuzhina.png" alt="kuzhina">
+                        <h2>Kuzhina</h2>
+                    </div>
+                    <div class="back">
+                        <p>Kuzhina eshte zemra e shtepise. Bejeni te cmuar!</p>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="front">
+                        <img src="library/dhomagjumi.png" alt="dhome gjumi">
+                        <h2>Dhoma Gjumi</h2>
+                    </div>
+                    <div class="back">
+                        <p>Dhoma e gjumit eshte vendi ku trupi gjene pushimin e duhur!</p>
+                    </div>
+                </div>
+
+               
+                <div class="card">
+                    <div class="front">
+                        <img src="library/komodina.png" alt="komodina">
+                        <h2>Komodina</h2>
+                    </div>
+                    <div class="back">
+                        <p>Komodinat e zbukurojne ambientin tuaj te shtepise!</p>
+                    </div>
+                </div>
+
+               
+                <div class="card">
+                    <div class="front">
+                        <img src="library/ndryshme.png" alt="te ndryshme">
+                        <h2>Te ndryshme</h2>
+                    </div>
+                    <div class="back">
+                        <p>Ju na jepni idene ne e kthejme ne produkt modern dhe kreativ!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="category" id="projektet">
+        <div class="container">
+            <div class="category-elements">
+                <h1>Kategorite</h1>
+
+                <div class="filter">
+                    <a href="#" class="button active" data-filter="tegjitha">Te gjitha</a>
+                    <a href="#" class="button" data-filter="kuzhina">Kuzhina</a>
+                    <a href="#" class="button" data-filter="dhomagjumi">Dhoma Gjumi</a>
+                    <a href="#" class="button" data-filter="komodina">Komodina</a>
+                </div>
+
+                <div class="category-images">
+                    <section class="content" id="images">
+
+                        
+                        <div class="image kuzhina">
+                            <img src="library/kuzhina1.jpg">
+                        </div>
+                        <div class="image kuzhina">
+                            <img src="library/kuzhina2.jpg">
+                        </div>
+                        <div class="image kuzhina">
+                            <img src="library/kuzhina3.jpg">
+                        </div>
+
+                       
+                        <div class="image dhomagjumi">
+                            <img src="library/dhomagjumi1.jpg">
+                        </div>
+                        <div class="image dhomagjumi">
+                            <img src="library/dhomagjumi2.jpg">
+                        </div>
+                        <div class="image dhomagjumi">
+                            <img src="library/dhomagjumi3.jpg">
+                        </div>
+
+                        
+                        <div class="image komodina">
+                            <img src="library/komodina1.jpg">
+                        </div>
+                        <div class="image komodina">
+                            <img src="library/komodina2.jpg">
+                        </div>
+                        <div class="image komodina">
+                            <img src="library/komoda3.jpg">
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="projects">
+        <div class="projects-details">
+            <h1 id="shfaq" style="display: none">Mobileria LEARTI ka realizuar me sukses mbi 100 punime ne mbare Kosoven!</h1>
+            <button class="button-project" type="button" onclick="shfaqPunimet()">Shfaq informatat e projektimeve!</button>
+        </div>
+    </div>
+
+
+    
+    <div class="dimensions-calculation">
+        <div class="container">
+            <div class="calculator">
+                <h1>Cmimorja</h1>
+                <p>Ju mund te kalkuloni cmimin per meter te kuzhines duke u bazuar ne modelin e meposhtem: </p>
+                <img src="library/icona-kuzhines.png">
+
+                <label for="meter">Shtyp metrat:</label>
+                <input type="number" name="meter" id="input1">
+
+                <label for="result">Cmimi per meter (€): </label>
+                <input type="number" name="result" id="input2">
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="about-us" id="rrethnesh">
+        <div class="container">
+            <h1 id="about-us-title">Kush jemi ne?</h1>
+            <div class="about-us-content">
+
+                <img src="library/about-us.jpg" id="first-photo" onmouseout="mousijasht()" onmouseover="mousimbi()" >
+                <img src="library/21199676_1834302263276771_2039787907639642835_o(1).jpg" id="second-photo" onmouseover="mousimbi()" onmouseout="mousijasht()"  style="display: none">
+
+                <p>Mobileria LEARTI eshte themeluar ne vitin 2015, gjate gjithe ketyre viteve jemi kujdesur te prodhojme modelet e mobiljeve me eksluzive me stil dhe elengance.<br>
+                    Mobileria LEARTI eshte njera nder prodhuesit me te suksesshem ne vendin tone. Specialiteti i kesaj mobilerie eshte prodhimi i kuzhinave moderne te paisura me elemente te teknikes se bardhe dhe poashtu me mundesi te dizajnimit klasik dhe modern.<br>
+                    Ne prezantojme koleksion te gjere te mobiljeve duke perfshire si: kuzhina me stil dhe dizajne bashkekohore, dollape me dyer dhe mekanizma levizes, mobilje te dhomave te dites, te dhomave te gjumit, dhoma per femije, tavolina per TV, te bukes, karrige, tavolina per kompjuter etj...<br>
+                    Per faktin se kemi nje eksperience shumevjecare si dhe me ekspoziten me te madhe prej 1500m2 ne fushen e mobilimit te ambienteve te brendshme, vazhdon te ofron nje game te gjere produktesh ku nderthurja e detajve, percakton funksionalitetin si dhe nje menyre qe percakton stilin e jeteses.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="contact" id="kontakti">
+        <div class="container">
+            <h1>Kontakti</h1>
+            <div class="contact-form">
+                <form onsubmit="event.preventDefault(); alert('Mesazhi nuk është aktiv për momentin.');">
+
+            <label for="emri">Emri dhe Mbiemri:</label>
+            <input type="text" name="emri" id="emriInput"> <br>
+
+            <label for="email">Email Adresa:</label>
+            <input type="email" name="email" id="emailInput"> <br>
+
+            <label for="pershkrimi">Pershkrimi</label>
+            <textarea name="pershkrimi" rows="10" id="pershkrimiInput"></textarea> <br>
+
+            <input type="submit" id="send-button" value="Dergo">
+
+            </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="footer">
+        <h4>Te gjitha te drejtat e rezervuara nga Mobileria Learti </h4>
+    </div>
+    
+    <script src="funksion.js"></script>
+
+
+    
+
+</body></html>
